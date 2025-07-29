@@ -2,19 +2,48 @@
   background-size: cover;
   background-position: center;
   padding: 140px 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.banner h1,
+.banner p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal; /* allow wrapping */
 }
 
 .banner p {
   color: whitesmoke;
   font-size: 1.5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  white-space: normal; /* allow wrapping */
 }
 
 .banner .container {
-  max-width: 600px;  /* limits the width inside banner */
-  margin: 0 auto;    /* center horizontally */
-  padding-top: 50px; /* you already have this */
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 0;
+  text-align: left;
+}
+
+.banner .btn {
+  margin-top: 1rem;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 600px) {
+  .banner h1 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+
+  .banner p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+
+  .banner .container {
+    padding: 30px 15px;
+  }
 }

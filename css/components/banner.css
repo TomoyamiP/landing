@@ -11,6 +11,26 @@
   word-wrap: break-word;
   overflow-wrap: break-word;
   white-space: normal; /* allow wrapping */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.banner h2 {
+  font-size: 2rem;       /* smaller than h1 */
+  font-weight: normal;   /* lighter than h1 */
+  margin-top: 0.2em;
+  margin-bottom: 1em;
+  color: whitesmoke;     /* match banner text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  line-height: 1.2;
+}
+
+.banner h1 {
+  margin-bottom: 0.1em;
+}
+
+.banner h2 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
 }
 
 .banner p {

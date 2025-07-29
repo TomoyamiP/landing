@@ -7,9 +7,14 @@
 .banner p {
   color: whitesmoke;
   font-size: 1.5rem;
-  white-space: nowrap; /* Prevent text wrapping */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal; /* allow wrapping */
 }
+
 .banner .container {
-  padding-top: 50px; /* pushes text down */
+  max-width: 600px;  /* limits the width inside banner */
+  margin: 0 auto;    /* center horizontally */
+  padding-top: 50px; /* you already have this */
 }

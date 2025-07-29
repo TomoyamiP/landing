@@ -1,11 +1,15 @@
 .banner {
-  background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
-  height: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 2rem;
-  font-weight: bold;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  background-position: center;
+  padding: 140px 0;
+}
+
+.banner p {
+  color: whitesmoke;
+  font-size: 1.5rem;
+  white-space: nowrap; /* Prevent text wrapping */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.banner .container {
+  padding-top: 50px; /* pushes text down */
 }

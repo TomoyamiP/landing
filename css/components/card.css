@@ -1,0 +1,30 @@
+.card {
+  width: 250px;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgb(230,230,230);
+  text-align: center;
+  border: 1px solid rgb(230,230,230);
+  word-wrap: break-word;     /* ensures long words break */
+  overflow-wrap: break-word; /* newer and more widely supported */
+  padding: 1rem;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+}
+
+.card p {
+  color: darkslategray;
+  margin: 0.5rem 0;
+  line-height: 1.4;
+  font-size: 1rem;
+  overflow-wrap: break-word; /* also safe here */
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}

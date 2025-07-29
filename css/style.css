@@ -5,31 +5,42 @@
 body {
   margin: 0;
   font-family: 'Open Sans', Arial, sans-serif;
-  background: #f4f4f4;
+  background: whitesmoke;
   color: #333;
 }
 
-h1, h2, h3, h4 {
+h1 {
+  display: block;
+  font-size: 3rem;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+  color: whitesmoke;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+h2, h3, h4 {
   font-family: 'Poppins', Arial, sans-serif;
+  text-align: center;
 }
 
-a {
+a.btn-flat {
   text-decoration: none;
+
+}
+.btn-flat {
+  color: whitesmoke;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #670BFF;
+  transition: background 0.3s ease;
 }
 
+.btn-flat:hover {
+  background: #4D04C4;
+  color: whitesmoke;
+}
 /* Custom design below! */
-
-/* style.css - global styles */
-
-.section {
-  max-width: 800px;
-  margin: 3rem auto;
-  padding: 0 1rem;
-}
-
-.section h2 {
-  margin-bottom: 1rem;
-  font-size: 1.8rem;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 0.5rem;
-}

@@ -1,5 +1,7 @@
 .card {
-  width: 250px;
+  flex: 1 1 250px;          /* allows cards to shrink/grow */
+  max-width: 300px;         /* prevents cards from getting too wide */
+  min-width: 250px;         /* keeps a reasonable minimum width */
   border-radius: 3px;
   box-shadow: 0 0 5px rgb(230,230,230);
   text-align: center;
@@ -7,6 +9,7 @@
   word-wrap: break-word;     /* ensures long words break */
   overflow-wrap: break-word; /* newer and more widely supported */
   padding: 1rem;
+  box-sizing: border-box;   /* include padding in width */
 }
 
 .card img {
@@ -24,7 +27,22 @@
 
 .card-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 20px; /* space between cards */
   margin-bottom: 30px;
   flex-wrap: wrap;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;         /* take most of the width on mobile */
+    max-width: 100%;
+    min-width: unset;    /* unset min-width for more flexibility */
+  }
 }
